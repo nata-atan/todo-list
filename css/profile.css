@@ -1,0 +1,28 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 17% auto;
+  grid-template-columns: 20% auto;
+  grid-template-areas:
+    'header header'
+    'main main';
+  color: black;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+.main {
+  grid-area: main;
+}
+
+.header > img {
+  max-width: 17%;
+  margin-left: 20px;
+}

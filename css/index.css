@@ -1,0 +1,62 @@
+.header,
+.sidenav,
+.main,
+.footer {
+  border: solid 1px lightgray;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 17% auto;
+  grid-template-columns: 20% auto;
+  grid-template-areas:
+    'header header'
+    'sidenav main';
+  color: black;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inserttask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  grid-area: main;
+}
+
+.header > img {
+  max-width: 17%;
+  margin-left: 20px;
+}
+
+#adcta {
+  width: 200px;
+}
+
+#txtadcta {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.email {
+  font-size: 15px;
+}
